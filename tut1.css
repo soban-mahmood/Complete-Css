@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  background-color: crimson;
+  color: aliceblue;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h1 {
+  color: black;
+}
+ul {
+  display: flex;
+  gap: 70px;
+}
+li {
+  list-style: none;
+}
+
+li,
+a {
+  color: aliceblue;
+  text-decoration: none;
+}

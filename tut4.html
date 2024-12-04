@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation and transform</title>
+  </head>
+  <style>
+    .con {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+      height: 200px;
+      width: 200px;
+      background-color: lightseagreen;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation-name: home;
+      animation-duration: 1s; /* Added animation duration */
+      animation-delay: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards; /* Added to keep the final state */
+      /* animation-direction: reverse; */
+      /* transition: all 0.5s ease-in-out; */
+    }
+
+    /* Uncommented and fixed hover effect */
+    .box:hover {
+      transform: scale(1.1); /* Changed to a valid transform */
+      border-radius: 15px;
+      font-size: 3rem;
+    }
+
+    @keyframes home {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg );
+      }
+    }
+</style>
+  </style>
+  <body>
+    <div class="con">
+      <div class="box">Animate Me</div>
+    </div>
+  </body>
+</html>
